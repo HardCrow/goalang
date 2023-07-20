@@ -23,4 +23,7 @@ func main() {
 	fmt.Printf("ptr=%v\n", ptr)  //指向的是值的地址
 	fmt.Printf("ptr=%v\n", *ptr) //指向的是地址对应的值
 	fmt.Printf("ptr=%v\n", &ptr) //取出存ptr地址的地址
+
+	var num int = 90
+	fmt.Printf("num=%v\n", &num) //基本数据类型也有地址
 }
