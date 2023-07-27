@@ -7,8 +7,9 @@ import (
 
 func main() {
 	//数组定义 var 定义名 []类型 = []类型{  }
-
-	var intArr [5]int = [...]int{1, 5, 2, 9, 41}
+	var a [2]int //定义
+	fmt.Println(a)
+	var intArr [5]int = [...]int{1, 5, 2, 9, 41} //定义加赋值
 	max := intArr[0]
 	for i := 0; i < len(intArr); i++ {
 		if max < intArr[i] {

@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 var n5 = 100
 var n6 = 10
@@ -26,4 +28,5 @@ func main() {
 
 	var num int = 90
 	fmt.Printf("num=%v\n", &num) //基本数据类型也有地址
+
 }
