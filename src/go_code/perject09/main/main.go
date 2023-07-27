@@ -14,4 +14,5 @@ func main() {
 	fmt.Println(slice)      //内容
 	fmt.Println(len(slice)) //元素个数
 	fmt.Println(cap(slice)) //容量
+
 }
