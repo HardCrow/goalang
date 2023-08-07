@@ -19,8 +19,8 @@ func main() {
 	p := Person{"tom"}  //方法的调用
 	p.test()            //强调方法的调用是值传递
 	fmt.Println(p.Name) //强调方法的调用是值传递
-	(&p).test()
-	fmt.Println(p.Name) //即使用取地址的方式去调用方法也是值传递
+	(&p).test()         //底层优化 (&p).test()=p.test()
+	fmt.Println(p.Name) //即使用取地址的方式去调用方法也是值传递   底层优化成了 p.test()
 	fmt.Println("...............................................")
 	test02(p)
 	fmt.Println(p.Name + "主函数输出") //也是值传递

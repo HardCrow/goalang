@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go_code/routine/perject17/model"
+	"go_code/routine/project16/model"
 )
 
 func main() {
