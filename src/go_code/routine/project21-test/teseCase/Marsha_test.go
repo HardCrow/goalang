@@ -11,10 +11,13 @@ func TestStore(t *testing.T) {
 	monster := work.Monster{
 		Name:  "黄",
 		Age:   99,
-		Skill: "吃饭",
+		Skill: "s",
 	}
 	res := monster.Store()
-	fmt.Println(res)
+	if !res {
+		t.Fatalf("错误%v 实际%v", true, res)
+	}
+	t.Log("成功")
 	resr := monster.Restore()
 	fmt.Println(resr)
 }
